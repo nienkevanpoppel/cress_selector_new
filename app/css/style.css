@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../assets/Montserrat-Bold.ttf"); }
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../assets/Montserrat-Light.otf"); }
+
+@font-face {
+  font-family: "Arkipelago";
+  src: url("../assets/Arkipilego.otf"); }
+
+body {
+  background-image: url("../assets/bg.png");
+  background-repeat: repeat;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0; }
+
+.background__element1 {
+  position: absolute;
+  left: 1em;
+  top: 17.5em;
+  z-index: -1; }
+
+.background__element2 {
+  position: absolute;
+  left: 29%;
+  top: -3.4em;
+  z-index: -1; }
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  height: 5em;
+  background-color: white;
+  top: 0;
+  -webkit-box-shadow: 0px 10px 21px -15px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 10px 21px -15px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 10px 21px -15px rgba(0, 0, 0, 0.65); }
+  .menu__item {
+    font-family: "Montserrat-Bold", sans-serif;
+    max-height: 6em !important;
+    width: 12.5%;
+    padding: 2em;
+    text-align: center; }
+    .menu__item--active {
+      text-decoration: underline #840022; }
+    .menu__item--logo {
+      padding: 0; }
+      .menu__item--logo img {
+        width: 6.5em; }
+
+.cressSelector {
+  display: flex;
+  flex: 1 100%;
+  flex-flow: row;
+  margin-top: 10em; }
+
+.p5Canvas {
+  display: none; }
+
+.actualSelector {
+  width: 50%;
+  order: 1;
+  margin-right: 4em;
+  text-align: center; }
+  .actualSelector__text {
+    z-index: 9999;
+    text-align: right;
+    float: right;
+    right: 0; }
+  .actualSelector__title {
+    font-size: 60px;
+    font-family: "Montserrat-Bold", sans-serif; }
+  .actualSelector__subtitle {
+    font-family: "Arkipelago";
+    font-size: 40px; }
+
+.pentagonCanvas {
+  display: inline-block; }
+
+.cressOverview {
+  width: 50%;
+  order: 2; }
+  .cressOverview__navigation {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .cressOverview__arrows {
+    display: flex; }
+  .cressOverview__prev {
+    width: 20px;
+    height: 20px;
+    background: url("../assets/prev.png");
+    background-size: cover; }
+  .cressOverview__next {
+    width: 20px;
+    height: 20px;
+    background: url("../assets/Next.png");
+    background-size: cover; }
+  .cressOverview__matches {
+    padding-top: 3em;
+    margin: auto;
+    display: flex;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: flex-start; }
+  .cressOverview__pageIndicator {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-family: "Montserrat-Light", sans-serif; }
+  .cressOverview__title {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 40px; }
+
+.cressElement {
+  background-color: white;
+  margin-top: 2em;
+  display: flex;
+  width: 26%;
+  margin: auto auto auto 0;
+  margin-bottom: 2em;
+  padding: 1em;
+  flex-flow: column;
+  -webkit-box-shadow: 0px 0px 42px -17px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 0px 0px 42px -17px rgba(0, 0, 0, 0.34);
+  box-shadow: 0px 0px 42px -17px rgba(0, 0, 0, 0.34); }
+  .cressElement__img {
+    max-width: 100%; }
+  .cressElement__title {
+    font-family: "Montserrat-Bold", sans-serif;
+    margin-top: 0.5em;
+    font-size: 20px; }
+  .cressElement__ingredients {
+    margin-top: 1em;
+    font-family: "Montserrat-Light", sans-serif; }
+  .cressElement__btn {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 0.5em;
+    margin-top: 1em;
+    border-radius: 0.5em;
+    border: 1px solid #C2C2C2;
+    justify-content: space-between; }
+    .cressElement__btn a {
+      text-decoration: none;
+      color: #840022;
+      font-family: "Montserrat-Bold", sans-serif; }
+    .cressElement__btn img {
+      float: right; }
+
+@media all and (max-width: 500px) {
+  .cressSelector {
+    flex-flow: column-reverse;
+    margin: 1em; }
+  .cressOverview__matches {
+    flex-flow: column; }
+  .cressElement {
+    width: 90%;
+    margin: auto; }
+  .sliderWrapper {
+    width: 100%;
+    margin: auto; }
+    .sliderWrapper__name {
+      order: -1; } }
